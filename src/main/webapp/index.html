@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div {
+			height: 98vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		form label {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		button {
+			margin: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="text-align: center;">Send Mail</h1>
+	<div>
+		<form action="mailsender" method="post">
+			<label for="reciever">
+				TO:
+				<input id="reciever" type="mail" name="email">
+			</label>
+			<label for="subject">
+				Subject:
+				<input id="subject" type="text" name="subject">
+			</label>
+			<label for="message">
+				Your Message:
+				<textarea id="w3review" name="message" rows="4" cols="50"></textarea>
+			</label>
+			<center><button type="submit">Send Mail</button></center>
+		</form>
+	</div>
+</body>
+
+</html>
